@@ -5,7 +5,7 @@
    <div class="h-screen lg:h-[600px] bg-primary md:h-screen grid md:grid-cols-1 lg:grid-cols-2 grid-cols-1 overflow-hidden">
       <div class="h-full flex flex-col justify-center w-[90%] mx-auto md:px-20">
         <h3 class="text-secondary text-[34px] font-[600]">Who We Are</h3>   
-        <p class="text-white font-light pt-6">
+        <p class="text-white font-light pt-6 md:leading-[40px]">
           Cashwise is a leading fintech company dedicated to providing personalized 
           financial services that cater to the unique needs and goals of our clients.
            With a team of industry experts, visionary technologists, and passionate financial 
