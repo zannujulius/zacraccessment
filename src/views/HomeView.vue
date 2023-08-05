@@ -2,7 +2,7 @@
   <div class="">
    <Navbar />
    <!-- hero section -->
-   <div class="h-[590px] bg-primary grid grid-cols-2 overflow-hidden">
+   <div class="h-[600px] bg-primary grid grid-cols-2 overflow-hidden">
       <div class="h-full flex flex-col justify-center px-20">
         <h3 class="text-secondary text-[24px] font-[600]">Who We Are</h3>   
         <p class="text-white">
@@ -23,7 +23,7 @@
       </div>
     </div>
     <!-- section two -->
-    <div class="mx-auto grid gap-6 grid-cols-2 w-[90%] h-screen justify-center items-center">
+    <div class="mx-auto grid mt-[100px] gap-6 grid-cols-2 w-[90%] justify-center items-center">
         <div v-for="i in aboutData"  :key="i.id" class="h-[620px] bg-[#F3F3F3] flex flex-col justify-between rounded-[30px] p-10">
           <div class="flex itms-center justify-between">
             <h3 class="font-[600] text-black text-[24px]">{{i.title}}</h3>
@@ -42,6 +42,30 @@
           </div>
         </div>
     </div>
+    <!-- section three -->
+    <div class="mx-auto mt-[100px] border-[2px] border-red-900 w-[90%] justify-center items-center">
+      <h3 class="text-[#0B150F] font-[600] text-[34px]">
+        What Sets Us Apart
+      </h3>
+      <div class="mt-10 grid gap-10 grid-cols-3">
+        <div class="" v-for="i in nicheData" :key="i.id">
+          <div class="h-[47px] w-[47px] flex items-center rounded-[10px] bg-lightPrimary  justify-center">
+            <div class="h-[24px] w-[24px]">
+              <img src="" alt="" class="w-full h-full" />
+            </div>
+          </div>
+          <h4 class="font-[600] my-2 ">
+            {{ i.title }}
+          </h4>
+          <div class="text-[14px] font-[400] leading-[22.4px]">
+            {{ i.desc }}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- section four  -->
+    <div class=""></div>
   </div>
 </template>
 
@@ -65,7 +89,39 @@ export default {
         title: "Our Vision",
         imageType: "cone",
         desc: `Our vision is to create a world where financial freedom is accessible to everyone, irrespective of their background or location. We envision a future where financial decisions are driven by data-driven insights, smart automation, and transparent practices, empowering individuals to make informed cho ....`
-      }]
+      }],
+      nicheData: [
+        {
+        id: 1,
+        imgTag: "bulb",
+        title: "Innovation",
+        desc: "We are at the forefront of financial technology, continuously exploring and integrating the latest advancements to offer cutting-edge solutions that enhance our users' financial lives."
+      }, 
+      {
+        id: 2,
+        imgTag: "sec",
+        title: "Security",
+        desc: "Your security is our utmost priority. We employ state-of-the-art security measures, encryption protocols, and advanced authentication methods to safeguard your financial data and transactions."
+      }, 
+      {
+        id: 3,
+        imgTag: "user",
+        title: "User Experience",
+        desc: "We are committed to providing an intuitive, user-friendly platform that makes managing finances a breeze. Our interface is designed with simplicity and functionality in mind to ensure a seamless user experience."
+      }, 
+      {
+        id: 4,
+        imgTag: "personal",
+        title: "Personalization",
+        desc: "We understand that every individual's financial journey is unique. That's why we offer tailored financial solutions that align with your specific goals and aspirations."
+      }, 
+      {
+        id: 5,
+        imgTag: "support",
+        title: "Customer Support",
+        desc: "Our dedicated customer support team is always available to assist you with any queries, concerns, or technical assistance you may need."
+      }, 
+    ]
     }
   },
   components: {
