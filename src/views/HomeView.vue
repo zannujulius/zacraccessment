@@ -17,6 +17,9 @@
         <div class="absolute w-[140px h-[100px] bottom-[50px] left-[-150px]">
           <img class="w-full h-full" src="@/assets/png/Frame_25.png" alt="" />
          </div>
+         <div class="absolute top-[70px] left-[190px]">
+            <img src="@/assets/svg/pointer.svg" alt="" class=""  />
+          </div>
         <div class="pt-[100px]">
           <img src="@/assets/png/hero_img.png" alt="hero-img" />
         </div>
