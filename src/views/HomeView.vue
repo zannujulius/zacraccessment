@@ -17,7 +17,7 @@
         <div class="absolute w-[140px h-[100px] bottom-[50px] left-[-150px]">
           <img class="w-full h-full" src="@/assets/png/Frame_25.png" alt="" />
          </div>
-        <div class="pt-[84px]">
+        <div class="pt-[100px]">
           <img src="@/assets/png/hero_img.png" alt="hero-img" />
         </div>
       </div>
@@ -58,6 +58,12 @@
             </div>
             <div class="h-[24px] w-[24px]" v-if="i.imgTag == 'user'">
               <img src="@/assets/svg/palette-fill.svg" alt="" class="w-full h-full" />
+            </div>
+            <div class="h-[24px] w-[24px]" v-if="i.imgTag == 'personal'">
+              <img src="@/assets/svg/user-4-fill.svg" alt="" class="w-full h-full" />
+            </div>
+            <div class="h-[24px] w-[24px]" v-if="i.imgTag == 'support'">
+              <img src="@/assets/svg/question-fill.svg" alt="" class="w-full h-full" />
             </div>
           </div>
           <h4 class="font-[600] my-2 ">
