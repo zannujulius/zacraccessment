@@ -66,7 +66,7 @@
               <img src="@/assets/svg/question-fill.svg" alt="" class="w-full h-full" />
             </div>
           </div>
-          <h4 class="font-[600] my-2 ">
+          <h4 class="font-[600] my-2 mt-6 ">
             {{ i.title }}
           </h4>
           <div class="text-[14px] font-[400] leading-[22.4px]">
@@ -77,18 +77,23 @@
     </div>
 
     <!-- section four  -->
-    <div class="mx-auto mt-[100px] bg-primary flex items-center justify-center flex-col rounded-[30px] w-[90%] h-[439px] bg-[section-pattern]">
-      <h3 class="text-[#96EF76] text-[20px] font-[600]">
-        Join Us on Our Financial Journey
+    <div class="mx-auto mt-[100px] relative bg-primary flex items-center overflow-hidden justify-center flex-col rounded-[30px] w-[90%] h-[439px]">
+      <div class="absolute">
+        <img src="@/assets/svg/line_art.svg" alt="img" class="" />
+      </div>
+      <h3 class="text-[#96EF76] text-[20px] headline font-Sora font-[500]" >
+        Join Us on Our Financial Journey  
       </h3>
-      <p class="text-center font-[300] w-[50%]  pt-10 text-white">
+      <p class="text-center font-light w-[50%]  pt-10 text-white">
         We invite you to embark on this exciting financial journey with us. At [Your Fintech Company Name], we believe in a collaborative approach, where our clients become our partners. Together, we can shape a future where financial possibilities are limitless.
       </p>
-      <div class="">
-        <div class="">
-
+      <div class="flex items-center justify-center  mt-8">
+        <div class="w-[174px] h-[67px]">
+          <img src="@/assets/png/Frame_334.png" alt="" class="w-full h-full" />
         </div>
-        <div class=""></div>
+        <div class="w-[174px] h-[67px] ml-4">
+          <img src="@/assets/png/Frame_334.png" alt="" class="w-full h-full" />
+        </div>
       </div>
     </div>
   </div>

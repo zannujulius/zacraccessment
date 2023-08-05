@@ -3,3 +3,8 @@
 @tailwind components;
 
 @tailwind utilities;
+
+.pattern {
+  background: linear-gradient(#0b150f, #0b150f),
+    url("https://plus.unsplash.com/premium_photo-1689801528344-79ba41dc3f23?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyMnx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60");
+}
