@@ -8,6 +8,10 @@ module.exports = {
         secondary: "#96EF76",
         lightPrimary: "#96EF7636",
       },
+      backgroundImage: {
+        "section-pattern":
+          "url('/src/assests/svg/line_art.svg/hero-pattern.svg')",
+      },
     },
   },
   plugins: [],

@@ -43,15 +43,21 @@
         </div>
     </div>
     <!-- section three -->
-    <div class="mx-auto mt-[100px] border-[2px] border-red-900 w-[90%] justify-center items-center">
+    <div class="mx-auto mt-[100px] w-[90%] justify-center items-center">
       <h3 class="text-[#0B150F] font-[600] text-[34px]">
         What Sets Us Apart
       </h3>
       <div class="mt-10 grid gap-10 grid-cols-3">
         <div class="" v-for="i in nicheData" :key="i.id">
           <div class="h-[47px] w-[47px] flex items-center rounded-[10px] bg-lightPrimary  justify-center">
-            <div class="h-[24px] w-[24px]">
-              <img src="" alt="" class="w-full h-full" />
+            <div class="h-[24px] w-[24px]" v-if="i.imgTag == 'bulb'">
+              <img src="@/assets/svg/lightbulb-flash-fill.svg" alt="" class="w-full h-full" />
+            </div>
+            <div class="h-[24px] w-[24px]" v-if="i.imgTag == 'sec'">
+              <img src="@/assets/svg/safe-2-fill.svg" alt="" class="w-full h-full" />
+            </div>
+            <div class="h-[24px] w-[24px]" v-if="i.imgTag == 'user'">
+              <img src="@/assets/svg/palette-fill.svg" alt="" class="w-full h-full" />
             </div>
           </div>
           <h4 class="font-[600] my-2 ">
@@ -65,7 +71,73 @@
     </div>
 
     <!-- section four  -->
-    <div class=""></div>
+    <div class="mx-auto mt-[100px] bg-primary flex items-center justify-center flex-col rounded-[30px] w-[90%] h-[439px] bg-[section-pattern]">
+      <h3 class="text-[#96EF76] text-[20px] font-[600]">
+        Join Us on Our Financial Journey
+      </h3>
+      <p class="text-center font-[300] w-[50%]  pt-10 text-white">
+        We invite you to embark on this exciting financial journey with us. At [Your Fintech Company Name], we believe in a collaborative approach, where our clients become our partners. Together, we can shape a future where financial possibilities are limitless.
+      </p>
+      <div class="">
+        <div class="">
+
+        </div>
+        <div class=""></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- section four -->
+  <div class="w-full bg-primary mt-[100px] h-[299px] ">
+    <div class="mx-auto w-[90%]  pt-10">
+      <div class="flex justify-between">
+        <div class="w-[137px] h-[27px]">
+          <img src="@/assets/png/app_logo.png" class="h-full w-full" alt="" />
+        </div>
+        <div class="grid gap-16 grid-cols-3">
+          <div class=""> 
+            <h4 class="font-[600] text-white ">
+              Support
+            </h4>
+            <div class="text-[14px] text-white pt-4 font-light">
+              Blog  
+            </div>
+            <div class="text-[14px] text-white pt-4 font-light">
+            Company
+            </div>
+          </div>
+          <div class="">
+            <h4 class="font-[600] text-white">
+              Legal 
+            </h4>
+            <div class="text-[14px] pt-4 text-white font-light">
+              Term of use  
+            </div>
+            <div class="text-[14px] pt-4 text-white font-light">
+              Privacy policy
+            </div>
+          </div>
+          <div class="">
+            <h4 class="font-[600] text-white">
+              Follow
+            </h4>
+            <div class="text-[14px] pt-4 text-white font-light">
+              Twitter
+            </div>
+            <div class="text-[14px] pt-4 text-white font-light">
+              LinkedIn
+            </div>
+            <div class="text-[14px] pt-4 text-white font-light">
+              Facebook
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr  class="border-[0.2px] mt-10 border-[#5E5E5E]"/>
+      <p class="text-center text-white text-[14px] text-thin py-8">
+        Design with ❤️ for SaaS
+      </p>
+    </div>
   </div>
 </template>
 
